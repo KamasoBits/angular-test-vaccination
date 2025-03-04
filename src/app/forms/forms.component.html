@@ -3,34 +3,36 @@
 </div>
 
 <div class="patients-details">
+
+    
     <mat-card class="patients-details-card">
         <form action="" class="patients-details">
-            <mat-form-field class="example-full-width" appearance="outline">
-                <input matInput type="text">
+            <mat-form-field class="patients-input" appearance="outline">
+                <input matInput type="text" [(ngModel)]="patients.firstName">
                 <mat-label>First Name</mat-label>
             </mat-form-field>
-            <mat-form-field class="example-full-width" appearance="outline">
-                <input matInput type="text">
+            <mat-form-field class="pattients-input" appearance="outline">
+                <input matInput type="text" [(ngModel)]="patients.middleName">
                 <mat-label>Middle Name</mat-label>
             </mat-form-field>
-            <mat-form-field class="example-full-width" appearance="outline">
-                <input matInput type="text">
+            <mat-form-field class="pattients-input" appearance="outline">
+                <input matInput type="text"  [(ngModel)]="patients.lastName">
                 <mat-label>Last Name</mat-label>
             </mat-form-field>
-            <mat-form-field class="example-full-width" appearance="outline">
-                <input matInput type="text">
+            <mat-form-field class="patients-input" appearance="outline">
+                <input matInput type="text"  [(ngModel)]="patients.sex">
                 <mat-label>Sex</mat-label>
             </mat-form-field>
-            <mat-form-field class="example-full-width" appearance="outline">
-                <input matInput type="text">
+            <mat-form-field class="patients-input" appearance="outline">
+                <input matInput type="text"   [(ngModel)]="patients.dob">
                 <mat-label>Date of Birth: DD/MM/YYYY</mat-label>
             </mat-form-field>
-            <mat-form-field class="example-full-width" appearance="outline">
-                <input matInput type="text">
+            <mat-form-field class="patients-input" appearance="outline">
+                <input matInput [(ngModel)]="patients.email">
                 <mat-label>Email Address</mat-label>
             </mat-form-field>
-            <mat-form-field class="example-full-width" appearance="outline">
-                <input matInput type="text">
+            <mat-form-field class="patients-input" appearance="outline">
+                <input matInput type="text"  [(ngModel)]="patients.nok">
                 <mat-label>Next of Kin</mat-label>
             </mat-form-field>
         </form>
@@ -39,3 +41,8 @@
         </mat-card-actions>
     </mat-card>
 </div>
+<br>
+
+<mat-card>
+    {{ patients | json}}
+</mat-card>
