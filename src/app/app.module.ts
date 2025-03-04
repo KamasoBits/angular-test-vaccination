@@ -13,7 +13,7 @@ import { HomeComponent } from './home/home.component';
 import { MatButtonModule } from '@angular/material/button';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { MatInputModule } from '@angular/material/input';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FormsComponent } from './forms/forms.component';
 import {MatDialogModule} from '@angular/material/dialog';
 import { PatientsTableComponent } from './patients-table/patients-table.component';
@@ -58,6 +58,7 @@ import { MatNativeDateModule, NativeDateAdapter } from '@angular/material/core';
     MatPaginatorModule,
     MatCheckboxModule,
     MatNativeDateModule,
+    FormsModule
     
 
 

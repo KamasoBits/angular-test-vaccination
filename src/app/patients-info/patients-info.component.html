@@ -1,7 +1,7 @@
 
 
 <div class="info">
-      <p> Patients  History & Vital Signs Vaccination Post Vacination</p>
+      <strong><p> Patients  History & Vital Signs Vaccination Post Vacination</p></strong>
 </div>
 
 
@@ -16,6 +16,7 @@
         </mat-card-content>
       </mat-card>  
 </div>
+<br>
 
 
 <div class="infoCollect">
@@ -51,6 +52,7 @@
 
 
 </div>
+<br>
 
 
 <div class="vital-signs">
@@ -61,36 +63,52 @@
             <p>
                 <mat-form-field appearance="outline">
                   <mat-label>Temperature</mat-label>
-                  <input matInput placeholder="Placeholder">
+                  <input [(ngModel)]="temperature" matInput placeholder="Temperature">
                 </mat-form-field>
               </p>
               <p>
                 <mat-form-field appearance="outline">
                   <mat-label>Pulse Rate</mat-label>
-                  <input matInput placeholder="Placeholder">
+                  <input [(ngModel)]="pulseRate" matInput placeholder="Pulse Rate">
                 </mat-form-field>
               </p>
               <p>
                 <mat-form-field appearance="outline">
                   <mat-label>Respiratory Rate</mat-label>
-                  <input matInput placeholder="Placeholder">
+                  <input  [(ngModel)]="respiratoryRate" matInput placeholder="Respiratory Rate">
                 </mat-form-field>
               </p>
               <p>
                 <mat-form-field appearance="outline">
                   <mat-label>Blood Pressure</mat-label>
-                  <input matInput placeholder="Placeholder">
+                  <input [(ngModel)]="bloodPressure" matInput placeholder="Blood Pressure">
                 </mat-form-field>
               </p>
               <p>
                 <mat-form-field appearance="outline">
                   <mat-label>SpO<sub>2</sub></mat-label>
-                  <input matInput placeholder="Placeholder">
+                  <input [(ngModel)]="SpO2" matInput placeholder="SpO2" >
                 </mat-form-field>
               </p>
 
         </mat-card-content>
 
       </mat-card>
+      <br>
+
+      <mat-card>
+
+        <p>
+          
+            <mat-label>Temperature<b>()<sup>0</sup>C</b>:</mat-label>{{temperature }}
+            <mat-label>Pulse Rate<b>(b/min)</b>:</mat-label>{{pulseRate}}
+            <mat-label>Respiratory Rate<b>(b/min)</b>:</mat-label>{{respiratoryRate}}
+            <mat-label>Blood Pressure<b>(mmHg)</b>:</mat-label>{{bloodPressure}}
+            <mat-label>Spo2<b>(%)</b>:</mat-label>{{SpO2}}
+          
+        </p>
+
+
+
    
-    </div>
+  

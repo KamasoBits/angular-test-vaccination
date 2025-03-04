@@ -6,7 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./patients-info.component.scss']
 })
 export class PatientsInfoComponent implements OnInit {
-checked: any;
+
+  public temperature = ""
+  public pulseRate = ""
+  public respiratoryRate = ""
+  public bloodPressure = ""
+  public SpO2 = ""
+
 
   constructor() { }
 
